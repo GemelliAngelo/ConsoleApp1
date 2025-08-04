@@ -1,4 +1,6 @@
-﻿string[] nomi = { "Angelo", "Simone", "Davide" };
+﻿using System.Collections;
+
+string[] nomi = { "Angelo", "Simone", "Davide" };
 
 foreach (string nome in nomi)
 {
@@ -19,8 +21,8 @@ Console.WriteLine(Somma(number1,number2));
 
 int[][] myArray =
 {
-    new int[]  {0,1,2,3},
-    new int[]  {4,5,6},
+    new int[] {0,1,2,3},
+    new int[] {4,5,6},
     new int[] {7,8,9,10,11,12},
     new int[] {13},
 };
@@ -32,5 +34,13 @@ for (int i = 0; i < myArray.Length; i++)
         Console.WriteLine(myArray[i][j]);
     }
 }
+
+ArrayList test = new ArrayList() { "a", 6, false, new int[] { 1, 2, 3, 4 }, new int[][] { new int [] {1,2,3 },new int[] {4,5,6} }, "Angelo" };
+
+for(int i = 0; i < test.Count; i++)
+{
+    Console.WriteLine(test[i]);
+}
+
 
 Console.Read();
