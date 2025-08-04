@@ -16,4 +16,21 @@ int number2 = int.Parse(Console.ReadLine());
 
 Console.WriteLine(Somma(number1,number2));
 
+
+int[][] myArray =
+{
+    new int[]  {0,1,2,3},
+    new int[]  {4,5,6},
+    new int[] {7,8,9,10,11,12},
+    new int[] {13},
+};
+
+for (int i = 0; i < myArray.Length; i++)
+{
+    for (int j = 0; j < myArray[i].Length; j++)
+    {
+        Console.WriteLine(myArray[i][j]);
+    }
+}
+
 Console.Read();
