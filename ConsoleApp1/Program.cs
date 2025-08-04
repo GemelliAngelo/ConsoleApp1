@@ -42,5 +42,12 @@ for(int i = 0; i < test.Count; i++)
     Console.WriteLine(test[i]);
 }
 
+List<int> test2 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+foreach(var ints in test2)
+{
+    Console.WriteLine(ints);
+}
+
 
 Console.Read();
