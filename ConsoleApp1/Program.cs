@@ -78,4 +78,23 @@ foreach (KeyValuePair<string,string> city in dictTest)
     Console.WriteLine($"{city.Key} => {city.Value}");
 }
 
+Stack<int> stackTest = new Stack<int>();
+
+stackTest.Push(1);
+stackTest.Push(2);
+stackTest.Push(5);
+stackTest.Push(10);
+stackTest.Push(20);
+stackTest.Push(50);
+stackTest.Push(100);
+
+Console.WriteLine(stackTest.Peek());
+
+stackTest.Pop();
+
+foreach (int item in stackTest)
+{
+    Console.WriteLine(item);
+}
+
 Console.Read();
