@@ -66,5 +66,16 @@ foreach (DictionaryEntry city in hashTest)
     Console.WriteLine($"{city.Key} ==> {city.Value}");
 }
 
+Dictionary<string, string> dictTest = new Dictionary<string, string>()
+{
+    {"Lombardia","Milano" },
+    {"Piemonte","Torino" },
+    {"Emilia-Romagna","Bologna" },
+};
+
+foreach (KeyValuePair<string,string> city in dictTest)
+{
+    Console.WriteLine($"{city.Key} => {city.Value}");
+}
 
 Console.Read();
