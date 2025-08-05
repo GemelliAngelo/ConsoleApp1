@@ -97,4 +97,9 @@ foreach (int item in stackTest)
     Console.WriteLine(item);
 }
 
+stackTest.Clear();
+
+Console.WriteLine(stackTest.TryPeek(out int result));
+Console.WriteLine(stackTest.TryPop(out int res));
+
 Console.Read();
