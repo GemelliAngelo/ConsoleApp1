@@ -114,5 +114,20 @@ stackTest.Clear();
 Console.WriteLine(stackTest.TryPeek(out int result));
 Console.WriteLine(stackTest.TryPop(out int res));
 
+// Utilizzo di Queue<string> e operazioni principali
+Queue<string> queueTest = new Queue<string>();
+
+queueTest.Enqueue("Angelo");
+queueTest.Enqueue("Simone");
+queueTest.Enqueue("Davide");
+queueTest.Enqueue("Luca");
+queueTest.Enqueue("Qwerty");
+
+// Visualizza l'elemento in fondo alla queue
+Console.WriteLine(queueTest.Peek());
+
+// Stampa di tutti gli elementi della queue
+while (queueTest.Count() > 0) Console.WriteLine(queueTest.Dequeue());
+
 // Attende input per terminare il programma
 Console.Read();
