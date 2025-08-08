@@ -54,7 +54,8 @@ namespace ConsoleApp1
         }
         public void SetAge(int age)
         {
-            this.age = age;
+            if (age > 0 && age <=100) this.age = age;
+            else Console.WriteLine("Inserisci un'età valida");
         }
     }
 }
