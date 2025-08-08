@@ -24,16 +24,17 @@ namespace ConsoleApp1
             this.surname = surname;
             this.age = age;
         }
-        public ArrayList getPersonData()
+        public string GetName()
         {
-            ArrayList arrayData = new ArrayList()
-            {
-                this.name,
-                this.surname,
-                this.age,
-            };
-
-            return arrayData;
+            return this.name;
+        }
+        public string GetSurname()
+        {
+            return this.surname;
+        }
+        public int GetAge()
+        {
+            return this.age;
         }
     }
 }

@@ -132,10 +132,7 @@ while (queueTest.Count() > 0) Console.WriteLine(queueTest.Dequeue());
 
 Person person1 = new Person("Angelo","Gemelli",23);
 
-foreach (var data in person1.getPersonData())
-{
-    Console.WriteLine(data);
-}
+Console.WriteLine($"{person1.GetName()} {person1.GetSurname()},{person1.GetAge()}");
 
 // Attende input per terminare il programma
 Console.Read();
