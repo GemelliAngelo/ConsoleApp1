@@ -130,7 +130,14 @@ Console.WriteLine(queueTest.Peek());
 // Stampa di tutti gli elementi della queue
 while (queueTest.Count() > 0) Console.WriteLine(queueTest.Dequeue());
 
+// Dichiarazione nuova istanza della classe Person
 Person person1 = new Person("Angelo","Gemelli",23);
+
+// Invocazione dei metodi Getters e Setters
+Console.WriteLine($"{person1.GetName()} {person1.GetSurname()},{person1.GetAge()}");
+
+person1.SetName("Davide");
+person1.SetAge(19);
 
 Console.WriteLine($"{person1.GetName()} {person1.GetSurname()},{person1.GetAge()}");
 
