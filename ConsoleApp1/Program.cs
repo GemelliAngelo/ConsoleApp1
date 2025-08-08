@@ -1,15 +1,16 @@
-﻿using System.Collections;
+﻿using ConsoleApp1;
+using System.Collections;
 
 // Array di nomi e stampa di ciascun nome
-string[] nomi = { "Angelo", "Simone", "Davide" };
+string[] names = { "Angelo", "Simone", "Davide" };
 
-foreach (string nome in nomi)
+foreach (string name in names)
 {
-    Console.WriteLine(nome);
+    Console.WriteLine(name);
 }
 
 // Funzione per sommare due numeri float
-static float Somma(float num1, float num2)
+static float Sum(float num1, float num2)
 {
     return num1 + num2;
 }
@@ -18,7 +19,7 @@ static float Somma(float num1, float num2)
 float number1 = float.Parse(Console.ReadLine());
 float number2 = float.Parse(Console.ReadLine());
 
-Console.WriteLine(Somma(number1, number2));
+Console.WriteLine(Sum(number1, number2));
 
 // Dichiarazione e stampa di un array di array (matrice irregolare)
 int[][] myArray =
@@ -128,6 +129,13 @@ Console.WriteLine(queueTest.Peek());
 
 // Stampa di tutti gli elementi della queue
 while (queueTest.Count() > 0) Console.WriteLine(queueTest.Dequeue());
+
+Person person1 = new Person("Angelo","Gemelli",23);
+
+foreach (var data in person1.getPersonData())
+{
+    Console.WriteLine(data);
+}
 
 // Attende input per terminare il programma
 Console.Read();
