@@ -14,5 +14,10 @@ namespace ConsoleApp1
         {
             this.subject = subject;
         }
+
+        public void Teach()
+        {
+            Console.WriteLine($"Io insegno {subject}");
+        }
     }
 }
