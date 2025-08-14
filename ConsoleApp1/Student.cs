@@ -19,5 +19,10 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Io studio in classe {classRoom}");
         }
+
+        public override string Hello()
+        {
+            return "Buongiorno Prof";
+        }
     }
 }

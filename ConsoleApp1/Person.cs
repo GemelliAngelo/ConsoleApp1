@@ -17,7 +17,7 @@ namespace ConsoleApp1
         static int count;
 
         // Metodo Hello della classe Person
-       public string Hello()
+       public virtual string Hello()
         {
             return $"Ciao mi chiamo {this.name}";
         }
