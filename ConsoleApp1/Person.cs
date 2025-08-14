@@ -14,6 +14,7 @@ namespace ConsoleApp1
         string name;
         string surname;
         int age;
+        static int count;
 
         // Metodo Hello della classe Person
        public string Hello()
@@ -22,7 +23,7 @@ namespace ConsoleApp1
         }
         
         // Dichiarazione metodo Constructor
-        public Person(string name,string surname, int age)
+        public Person(string name,string surname, int age) 
         {
             this.name = name;
             this.surname = surname;
