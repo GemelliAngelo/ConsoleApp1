@@ -8,9 +8,14 @@
 
             int sum = 0;
 
-            List<int> nums = new([new Random().Next(50), new Random().Next(100), new Random().Next(100), new Random().Next(100), new Random().Next(100),]);
+            List<int> nums = new();
 
-            for(int i=0; i < nums.Count; i++)
+            for(int i = 0; i < new Random().Next(2,10); i++)
+            {
+                nums.Add(new Random().Next(100));
+            }
+
+            for(int i = 0; i < nums.Count; i++)
             {
                 Console.WriteLine(nums[i]);
                 sum += nums[i];
