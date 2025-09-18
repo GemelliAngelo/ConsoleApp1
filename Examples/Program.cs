@@ -36,7 +36,23 @@
             int sum2 = 0;
 
             // Genero la lista con elementi inseriti via prompt convertiti in int
-            List<int> nums2 = new([Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()),]);
+            List<int> nums2 = new();
+
+            // Ciclo e genero elementi della lista verificando se sono parsabili
+            for (int i = 0; i < 3; i++)
+            {
+                string input = Console.ReadLine();
+
+                // Riassegno il valore finchè non è parsabile
+                while (!(int.TryParse(input, out int res)))
+                {
+                    Console.WriteLine("Numero non valido!");
+                    input = Console.ReadLine();
+                }
+
+                // Aggiungo il numero parsato alla lista
+                    nums2.Add(Convert.ToInt32(input));
+            }
 
             // Ciclo e sommo ogni elemento della lista
             for (int i = 0; i < nums2.Count; i++)
