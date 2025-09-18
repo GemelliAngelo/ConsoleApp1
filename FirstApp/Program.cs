@@ -75,6 +75,7 @@ namespace FirstApp1
                     Console.WriteLine("is 100");
                     break;
                 default:
+                    Console.WriteLine("No case found");
                     break;
             }
 
