@@ -60,6 +60,24 @@ namespace FirstApp1
             KeyValuePair<string, List<string>> bookKvp = new("Joe", ["Harry Potter", "Star Wars"]);
             Console.WriteLine($"{bookKvp.Key} | {string.Join(", ", bookKvp.Value)}");
 
+            int num = default;
+
+            switch(num)
+            {
+                case 0:
+                    Console.WriteLine($"Is {num}");
+                    break;
+                case 1:
+                case 2:
+                    Console.WriteLine("Is 1 or 2");
+                    break;
+                case 100:
+                    Console.WriteLine("is 100");
+                    break;
+                default:
+                    break;
+            }
+
             Console.WriteLine("Hello, World!");
             Console.Read();
         }
