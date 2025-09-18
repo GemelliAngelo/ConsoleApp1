@@ -9,7 +9,7 @@
             int sum = 0;
             // Dichiaro la lista di numeri
             List<int> nums = new();
-            // Riempio la lista con un un numero casuale di numeri casuali
+            // Riempio la lista con un un numero casuale(min,max) di numeri casuali(min,max)
             for(int i = 0; i < new Random().Next(2,10); i++)
             {
                 nums.Add(new Random().Next(100));
